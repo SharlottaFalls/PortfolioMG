@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, Arial, Tahoma, Serif;
+  padding: 10px;
+  background: #E0F8D7;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #A4E78B;
+  color: black;
+  animation: mymove 3s;
+}
+
+@keyframes mymove {
+  0% {
+    background: #FFFFFF;
+    color: white;
+  }
+  30% {
+    background: #A4E78B;
+    color: black;
+  }
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: grey;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: grey;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  animation: mymove 3s;   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  animation: mymove 3s;
+  float: left;
+  width: 25%;
+  background-color: #E0F8D7;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #F3FFEE;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Multimedia</h1>
+</div>
+
+<div class="topnav">
+  <a href = "new_homepage.html"> Homepage </a>
+  <a href = "about.html"> About Me </a>
+  <a href = "mylists.html"> My Lists </a>
+  <a style="color:grey;" href = "multimedia.html"> Multimedia </a>
+  <a href = "hello@gmail.com"> Email Me </a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>HORSE RIDING</h2>
+      <h5>As I mentioned before, I absolutely love horse riding.</h5>
+      <img src="Internship Images/3791149.jpg" alt="Girl riding a horse" width="500" height="300"/>
+    </div>
+    <div class="card">
+      <h2>VIOLIN</h2>
+      <h5>You should know by now that I've been playing the viloin for 9 years.</h5>
+      <img src="Internship Images/violingif.gif" alt="Violin GIF" width="500" height="300"/>
+    </div>
+    <div class="card">
+      <h2>MUSIC</h2>
+      <h5>I have listed a couple pieces I like before, but here you can listen and watch a performance of the 9th Symphony by Beethoven.</h5>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/rOjHhS5MtvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="card">
+      <h2>AUDIO</h2>
+      <h5>This is another great piece that you can listen to. But please wait 6 seconds for the piece to begin, the audio that I chose has a delay for some reason. The name of the piece is "Raging Torrent" composed by Samuel Maykapar.</h5>
+      <audio controls>
+	<source src="Internship Audio/maykapar_raging_torrent.mp3" type="audio/mpeg">
+      </audio></div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="Internship Images/green_aesthetic.jpg" alt="Green Aesthetic Image" width=100% height="1"/>
+      <p>Click <a href="about.html">here</a> if you want to learn more about me.</p>
+    </div>
+    <div class="card">
+      <h2>My Hobbies</h2>
+      <img src="Internship Images/green_aesthetic_two.jpg" alt="Another Green Aesthetic Image" width=100% height="1"/>
+      <p>If you are interested to know what I enjoy doing in my free time, you are welcome to click <a href="my_lists.html">here</a>.</p>
+    </div>
+    <div class="card">
+      <h2>Contact Me</h2>
+      <p>You can email me by clicking <a href = "hello@gmail.com">here</a>.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Thank you for visiting my website!</h2>
+</div>
+
+</body>
+</html>
+

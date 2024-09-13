@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Tahoma, Arial, Tahoma, Serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 85px;
+  text-align: center;
+  background: #A0DCDB;
+  color: white;
+  animation: mymove 5s;
+}
+
+@keyframes mymove {
+  0% {
+    background: #FFFFFF;
+    color: white;
+  }
+  30% {
+    background: #A0DCDB;
+    color: white;
+  }
+}
+
+a:link {
+  color: #00A3B7;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #00A3B7;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #7A4ED8;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+  font-family: Gill Sans, Arial, Tahoma, Serif;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: #FFEDFA;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Welcome To My Website!</h1>
+  <p>Explore this website to learn more about me and the things I like doing</p>
+</div>
+
+<div class="navbar">
+  <a style="color:grey;" href = "new_homepage.html"> Homepage </a>
+  <a href = "about.html"> About Me </a>
+  <a href = "mylists.html"> My Lists </a>
+  <a href = "multimedia.html"> Multimedia </a>
+  <a href = "hello@gmail.com"> Email Me </a>
+</div>
+
+<div class="row">
+  
+  <div class="main">
+    <h2>THIS IS MY HOMEPAGE</h2>
+    <h5>From here you can navigate to other pages</h5>
+    <img src="Internship Images/pink_blue_better.png" alt="Blue-Pink Aesthetic Image" width=100% height="1"/>
+    <p>Hi! My name is Maria and I am 16 years old. On this website you'll learn the things that I like doing, movies I like, my favorite songs and some other interests and hobbies that I have.</p>
+    <p>So pull up a chair and enjoy browsing my site!</p>
+    <br>
+    <h2>WHERE TO LOOK FIRST</h2>
+    <h5>Look here if you don't know where to start</h5>
+    <img src="Internship Images/pink_aesthetic_better.png" alt="Blue-Pink Aesthetic Image" width=100% height="1"/>
+    <p>If you're unsure of what page leads to what information, then this segment is for you. </p>
+    <p>On the <a href="about.html">About Me</a> page you can find out what things interest me the most and what my career will be. And on the <a href="mylists.html">My Lists</a> page you can read actual lists that I put together to help you understand what kinds of things I enjoy watching, listening to, or doing in my free time. And on the <a href="multimedia.html">Multimedia</a> page you can, not only, learn more things about me, but also listen to my favorite music and watch one of my most favorite videos on YouTube! And last but not least, by clicking on the <a href = "hello@gmail.com">Email Me</a> page, you can, you guessed it, send me a email!</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Thank you for visiting my website!</h2>
+</div>
+
+</body>
+</html>
