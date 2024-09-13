@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, Arial, Tahoma, Serif;
+  padding: 10px;
+  background-color: #FFFECC;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #FFB05C;
+  animation: mymove 3s;
+}
+@keyframes mymove {
+  0% {
+    background: #FFFFFF;
+    color: white;
+  }
+  30% {
+    background: #FFB05C;
+    color: black;
+  }
+}
+
+a:link {
+  color: orange;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: orange;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav b {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  background: #FFFECC;
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+  background: #FFFECC;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: #FED3A4;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>About Me</h1>
+</div>
+
+<div class="topnav">
+  <a href = "new_homepage.html"> Homepage </a>
+  <a style="color:grey;" href = "about.html"> About Me </a>
+  <a href = "mylists.html"> My Lists </a>
+  <a href = "multimedia.html"> Multimedia </a>
+  <a href = "hello@gmail.com"> Email Me </a>
+</div>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>CODING EXPERIENCE</h2>
+      <h5>I like coding!</h5>
+      <img src="Internship Images/yellow_aesthetic_one.png" alt="First Yellow Aesthetic Image" width=100% height="1"/>
+      <p>I love coding and I have been doing it since I was 10. Here are some of the coding skiils that I have:</p>
+      <ul>
+        <li>Coding in Java</li>
+        <li>Coding in Python</li>
+        <li>Coding in HTML</li>
+        <li>Coding in CSS</li>
+        <li>Utilizing IntelliJ IDEA</li>
+        <li>Utilizng PyCharm</li>
+ 	<li>Writing an intercative game in Python</li>
+        <li>Creating webpage using HTML and CSS</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>SCHOOL ACHIEVEMENTS</h2>
+      <h5>These are some facts about me regarding academic success</h5>
+      <p>I'm not the most dilligent student, but I try..</p>
+      <img src="Internship Images/yellow_aesthetic_two.png" alt="Second Yellow Aesthetic Image" width=100% height="1"/>
+      <ul>
+        <li>Unweighted GPA: 3.767</li>
+        <li>Weighted GPA: 4.083</li>
+        <li>AP Courses: Computer Science Principles, Computer Science Applications</li>
+        <li>Honors Courses: Chemistry, English, World History, Pre-Calculus</li>
+        <li>Awards: was elected to the Student Government in an Honors Humanities class</li>
+        <li>Twice got honors rating at Solo and Ensemble for District and State Music Performance assessment hosted by Florida Orchestra Association.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>My Hobbies</h2>
+      <img src="Internship Images/yellow_aesthetic_three.jpg" alt="Third Yellow Aesthetic Image" width=100% height="1"/>
+      <p>If you are interested to know what I enjoy doing in my free time, you are welcome to click <a href="my_lists.html">here</a>.</p>
+    </div>
+    <div class="card">
+      <h2>Listen To music</h2>
+      <img src="Internship Images/yellow_aesthetic_four.jpg" alt="Fourth Yellow Aesthetic Image" width=100% height="1"/>
+      <p>Click <a href="multimedia.html">here</a> if you want to hear some of the music that I like.</p>
+    </div>
+    <div class="card">
+      <h2>Contact Me</h2>
+      <p>You can email me by clicking <a href = "hello@gmail.com">here</a>.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Thank you for visiting my website!</h2>
+</div>
+
+</body>
+</html>
